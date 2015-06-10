@@ -4,7 +4,8 @@ var restify  = require('restify'),
 
 
 function listPools(req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Content-Type', 'application/json; charset=utf-8')
     request('https://www.stadt-zuerich.ch/stzh/bathdatadownload', function(err, response, data) {
         parseXml(data, function(err, poolData) {
             var baths = poolData.bathinfos.baths,
