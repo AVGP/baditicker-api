@@ -8,8 +8,7 @@ Sending a GET request to [https://baditicker.herokuapp.com/](https://baditicker.
 
 ```json
 {
-  "pools": [
-  {
+  "pools": [{
     "name": "Flussbad Au-Höngg",
     "temperature": "17",
     "updatedAt": "Mi, 10.06.2015 11:02",
@@ -20,7 +19,7 @@ Sending a GET request to [https://baditicker.herokuapp.com/](https://baditicker.
     "temperature": "17",
     "updatedAt": "Mi, 10.06.2015 08:20",
     "open": true
-  }
+  }] 
 }
 ```
 
