@@ -16,7 +16,7 @@ function listPools(req, res, next) {
                     console.log(bath.title[0], bath.temperatureWater[0], bath.dateModified[0], bath.openClosedTextPlain[0])
                     pools.pools.push({
                         name: bath.title[0],
-                        temperature: bath.temperatureWater[0],
+                        temperature: parseFloat(bath.temperatureWater[0]),
                         updatedAt: bath.dateModified[0],
                         open: bath.openClosedTextPlain[0] === 'geöffnet'
                     })
