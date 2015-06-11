@@ -10,13 +10,13 @@ Sending a GET request to [https://baditicker.herokuapp.com/](https://baditicker.
 {
   "pools": [{
     "name": "Flussbad Au-Höngg",
-    "temperature": "17",
+    "temperature": 17,
     "updatedAt": "Mi, 10.06.2015 11:02",
     "open": false
   },
   {
     "name": "Flussbad Oberer Letten",
-    "temperature": "17",
+    "temperature": 18,
     "updatedAt": "Mi, 10.06.2015 08:20",
     "open": true
   }] 
