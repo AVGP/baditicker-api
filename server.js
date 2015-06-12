@@ -18,7 +18,7 @@ function listPools(req, res, next) {
                         name: bath.title[0],
                         temperature: parseFloat(bath.temperatureWater[0]),
                         updatedAt: bath.dateModified[0],
-                        open: bath.openClosedTextPlain[0] === 'geöffnet'
+                        open: bath.openClosedTextPlain[0] === 'geschlossen' ? false : true
                     })
                 }
             }
