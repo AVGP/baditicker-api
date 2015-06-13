@@ -2,7 +2,6 @@ var restify  = require('restify'),
     request  = require('request'),
     parseXml = require('xml2js').parseString
 
-
 function listPools(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*')
     res.header('Content-Type', 'application/json; charset=utf-8')
@@ -18,7 +17,9 @@ function listPools(req, res, next) {
                         name: bath.title[0],
                         temperature: parseFloat(bath.temperatureWater[0]),
                         updatedAt: bath.dateModified[0],
-                        open: bath.openClosedTextPlain[0] === 'geschlossen' ? false : true
+                        open: bath.openClosedTextPlain[0] === 'geschlossen' ? false : true,
+                        openText: bath.openClosedTextPlain[0],
+                        url: bath.urlPage[0]
                     })
                 }
             }
