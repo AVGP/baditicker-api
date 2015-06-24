@@ -30,7 +30,7 @@ Sending a GET request to [https://baditicker.herokuapp.com/](https://baditicker.
 Here's what each field means:
 
 | Field name | Description | Type |
-| === | === | === |
+| --- | --- | --- |
 | name | A human-readable name of the pool | String |
 | temperature | The water temperature | Float |
 | updatedAt | A datetime containing the last update of the record for this pool | DateTime |
